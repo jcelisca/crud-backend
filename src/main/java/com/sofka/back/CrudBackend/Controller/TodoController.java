@@ -17,17 +17,18 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/todo")
+
 public class TodoController {
 
     @Autowired
     private TodoService service;
 
-    @GetMapping
+    @GetMapping()
     public List<Todo> list(){
         return service.list();
     }
 
-    @PostMapping
+    @PostMapping()
     public Todo save(@RequestBody Todo todo){
         return service.save(todo);
     }

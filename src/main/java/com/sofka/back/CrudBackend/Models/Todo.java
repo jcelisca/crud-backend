@@ -6,6 +6,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
+
+/**
+ * Clase principal que contiene los atributos de los objetos que se guardan en la base de datos
+ */
 public class Todo {
 
     @Id
